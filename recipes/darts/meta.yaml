@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/khanrc/pt.darts/archive/v{{ version }}.tar.gz
+  url: https://github.com/khanrc/pt.darts/archive/{{ version }}.tar.gz
   sha256: 7a4a95a27d0eae8f53af6cd0716f77455773658d33e6dc010332a7f924fdfb04
 
 build:
