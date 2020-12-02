@@ -1,0 +1,40 @@
+{% set name = "darts" %}
+{% set version = "0.2" %}
+
+package:
+  name: {{ name|lower }}
+  version: {{ version }}
+
+source:
+  url: https://github.com/khanrc/pt.darts/archive/v{{ version }}.tar.gz
+  sha256: 7a4a95a27d0eae8f53af6cd0716f77455773658d33e6dc010332a7f924fdfb04
+
+build:
+  number: 0
+  script: {{ PYTHON }} -m pip install . -vv
+
+requirements:
+  host:
+    - python
+    - pip
+  run:
+    - python
+
+about:
+  home: https://github.com/khanrc/pt.darts
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
+  summary: Differentiable Architecture Search
+  description: |
+    The algorithm is based on continuous relaxation and gradient descent in the architecture space. 
+    It is able to efficiently design high-performance convolutional architectures for image classification 
+    (on CIFAR-10 and ImageNet) and recurrent architectures for language modeling (on Penn Treebank and WikiText-2). 
+    Only a single GPU is required.
+  doc_url: https://github.com/khanrc/pt.darts
+  dev_url: https://github.com/khanrc/pt.darts
+
+extra:
+  recipe-maintainers:
+    - Tata17
+    - oblute
