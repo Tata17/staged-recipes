@@ -20,12 +20,7 @@ requirements:
   
   run:
     - python
-
-test:
-  imports:
-    - pt.darts
-
-
+    
 about:
   home: https://github.com/khanrc/pt.darts
   license: MIT
