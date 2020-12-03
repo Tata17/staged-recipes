@@ -30,7 +30,7 @@ about:
   home: https://github.com/khanrc/pt.darts
   license: MIT
   license_family: MIT
-  license_file: LICENSE
+  license_file: LICENSE.txt
   summary: Differentiable Architecture Search
   description: |
     The algorithm is based on continuous relaxation and gradient descent in the architecture space. 
