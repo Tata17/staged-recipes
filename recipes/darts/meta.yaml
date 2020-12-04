@@ -17,17 +17,13 @@ build:
 requirements:
   host:
     - python
-    - pip
   run:
     - python
-    - pip
-    - graphviz
-    - torch
+    - pythorch
 
 test:
   requires:
-    - pip
-    - torch
+    - pytorch
   source_files:
     - scripts/benchmark.py
   commands:
