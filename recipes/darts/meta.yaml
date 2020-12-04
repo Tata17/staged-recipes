@@ -10,7 +10,7 @@ source:
   sha256: b0c4689cdabc5fdec0ba3c829057aa2cb94f9a97036cf5ae545de6247d301e9c
 
 build:
-  number: 1
+  number: 0
   script:
     - cp -r $SRC_DIR $SP_DIR/pt.darts
     - cp -r $SRC_DIR $SP_DIR\pt.darts #[win]
@@ -27,12 +27,8 @@ requirements:
     - tensorboardX
 
 test:
-  requires:
-	  - pip
-	source_files:
-	  - scripts/*
-	commands:
-	  - py.scripts
+  imports:
+    - pt.darts
 
 about:
   home: https://github.com/khanrc/pt.darts
