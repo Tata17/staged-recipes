@@ -27,7 +27,7 @@ requirements:
 
 test:
   imports:
-    - pt.darts   
+    - darts   
 
 about:
   home: https://github.com/khanrc/pt.darts
