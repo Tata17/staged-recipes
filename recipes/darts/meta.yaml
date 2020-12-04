@@ -1,4 +1,4 @@
-{% set name = "pt.darts" %}
+{% set name = "darts" %}
 {% set version = "0.2" %}
 
 package:
@@ -19,10 +19,15 @@ requirements:
     - python
   run:
     - python
+    - graphviz
 
 test:
-  imports:
-    - pt.darts
+  requires:
+    - graphviz
+  source_files:
+    - scripts/benchmark.py
+  commands:
+    - python scripts/benchmark.py   
 
 about:
   home: https://github.com/khanrc/pt.darts
