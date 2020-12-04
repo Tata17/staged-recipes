@@ -17,16 +17,17 @@ build:
 requirements:
   host:
     - python
-    - pytorch
   run:
     - python
+    - numpy
     - pythorch
+    - graphviz
+    - tensorboard
+    - tensorboardX
 
 test:
-  source_files:
-    - scripts/benchmark.py
-  commands:
-    - python scripts/benchmark.py   
+  imports:
+    - pt.darts   
 
 about:
   home: https://github.com/khanrc/pt.darts
