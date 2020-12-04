@@ -22,8 +22,6 @@ requirements:
     - pythorch
 
 test:
-  requires:
-    - pytorch
   source_files:
     - scripts/benchmark.py
   commands:
