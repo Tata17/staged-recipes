@@ -13,6 +13,7 @@ build:
   number: 1
   script:
     - cp -r $SRC_DIR $SP_DIR/pt.darts
+    - cp -r $SRC_DIR $SP_DIR\pt.darts #[win]
 
 requirements:
   host:
@@ -26,8 +27,12 @@ requirements:
     - tensorboardX
 
 test:
-  imports:
-    - darts   
+  requires:
+	  - pip
+	source_files:
+	  - scripts/*
+	commands:
+	  - py.scripts
 
 about:
   home: https://github.com/khanrc/pt.darts
