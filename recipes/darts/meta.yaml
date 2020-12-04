@@ -20,10 +20,11 @@ requirements:
   run:
     - python
     - graphviz
+    - torch
 
 test:
   requires:
-    - graphviz
+    - torch
   source_files:
     - scripts/benchmark.py
   commands:
