@@ -13,6 +13,7 @@ build:
   number: 1
   script:
     - cp -r $SRC_DIR $SP_DIR/pt.darts
+    - cp -r $SRC_DIR $SP_DIR\pt.darts # [win]
 
 requirements:
   host:
