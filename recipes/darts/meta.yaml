@@ -12,8 +12,8 @@ source:
 build:
   number: 0
   script:
-    - cp -r $SRC_DIR $SP_DIR/pt.darts
-    - cp -r $SRC_DIR $SP_DIR\pt.darts #[win]
+    - cp -r $SRC_DIR $SP_DIR/pt.darts  # [not win]
+    - cp -r $SRC_DIR $SP_DIR\pt.darts  # [win]
 
 requirements:
   host:
@@ -27,14 +27,14 @@ requirements:
     - tensorboardX
 
 test:
-	requires:
-	  - argparse
-	  - time
-	source_files:
-	  - scripts/*
-	commands:
-	  - py.scripts
-
+  requires:
+    - argparse
+    - time
+  source_files:
+    - scripts/*
+  commands:
+    - py.scripts
+    
 about:
   home: https://github.com/khanrc/pt.darts
   license: MIT
