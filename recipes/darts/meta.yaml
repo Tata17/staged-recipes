@@ -13,7 +13,7 @@ build:
   number: 0
   skip: True  # [win]
   script:
-    - cp -r $SRC_DIR $SP_DIR/pt.darts
+    - cp -r $SRC_DIR $SP_DIR/pt.darts  # [linux, osx]
 
 requirements:
   host:
@@ -23,16 +23,15 @@ requirements:
     - python
     - pip
     - pytorch
-    - graphviz==0.8.4
+    - graphviz
     - numpy==1.15.4
     - tensorboardx==1.6
-    - tensorboad==1.13.0
+    - tensorboard==1.13.0
 
 test:
   requires:
     - argparse
     - time
-    - copy
   source_files:
     - scripts/*
   commands:
