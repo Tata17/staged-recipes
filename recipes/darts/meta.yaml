@@ -13,7 +13,7 @@ build:
   number: 0
   skip: True  # [win]
   script:
-    - cp -r $SRC_DIR $SP_DIR/pt.darts  # [linux, osx]
+    - cp -r $SRC_DIR $SP_DIR/pt.darts
 
 requirements:
   host:
@@ -22,20 +22,11 @@ requirements:
   run:
     - python
     - pip
-    - pytorch
-    - graphviz
-    - numpy==1.15.4
-    - tensorboardx==1.6
-    - tensorboard==1.13.0
 
 test:
-  requires:
-    - argparse
-    - time
-  source_files:
-    - scripts/*
-  commands:
-    - py.scripts
+  imports:
+    - pt.darts
+
 
 about:
   home: https://github.com/khanrc/pt.darts
