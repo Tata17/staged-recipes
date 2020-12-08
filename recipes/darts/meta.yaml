@@ -13,13 +13,17 @@ build:
   number: 0
   skip: True  # [win]
   script:
-    - cp -r $SRC_DIR $SP_DIR/pt.darts  # [not win]
+    - cp -r $SRC_DIR $SP_DIR/pt.darts
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.0
   run:
-    - python >=3.6
+    - python >=3.0
+    - pytorch >=0.4.1
+    - graphviz
+    - numpy
+    - tensorboardx
 
 test:
   requires:
