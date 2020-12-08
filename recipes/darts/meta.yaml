@@ -17,18 +17,22 @@ build:
 
 requirements:
   host:
-    - python >=3.0
+    - python
+    - pip
   run:
-    - python >=3.0
-    - pytorch >=0.4.1
-    - graphviz
-    - numpy
-    - tensorboardx
+    - python
+    - pip
+    - pytorch
+    - graphviz==0.8.4
+    - numpy==1.15.4
+    - tensorboardx==1.6
+    - tensorboad==1.13.0
 
 test:
   requires:
     - argparse
     - time
+    - copy
   source_files:
     - scripts/*
   commands:
