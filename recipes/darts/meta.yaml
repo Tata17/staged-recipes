@@ -18,16 +18,13 @@ build:
 requirements:
   host:
     - python
-    - pip
   run:
     - python
-    - pip
 
 test:
   imports:
     - pt.darts
-
-
+    
 about:
   home: https://github.com/khanrc/pt.darts
   license: MIT
