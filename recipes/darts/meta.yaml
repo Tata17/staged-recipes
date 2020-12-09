@@ -22,8 +22,14 @@ requirements:
     - python
 
 test:
-  imports:
-    - pt.darts
+  requires:
+    - argparse
+    - time
+  source_files:
+    - scripts/*
+  commands:
+    - py.scripts
+
 
 about:
   home: https://github.com/khanrc/pt.darts
