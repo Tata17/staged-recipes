@@ -12,19 +12,19 @@ source:
 build:
   number: 0
   skip: True  # [win]
-  script:
-    - cp -r $SRC_DIR $SP_DIR/pt.darts
+  script: cp -r $SRC_DIR $SP_DIR/pt.darts
 
 requirements:
   host:
     - python
+    - pip
   run:
     - python
 
 test:
   imports:
     - pt.darts
-    
+
 about:
   home: https://github.com/khanrc/pt.darts
   license: MIT
