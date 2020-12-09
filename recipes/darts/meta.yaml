@@ -22,9 +22,6 @@ requirements:
     - python
 
 test:
-  requires:
-    - argparse
-    - time
   source_files:
     - scripts/*
   commands:
