@@ -23,9 +23,10 @@ requirements:
 
 test:
   source_files:
-    - scripts/*
+    - scripts
+    - scripts.benchmark
   commands:
-    - py.scripts
+    - scripts --help
 
 
 about:
