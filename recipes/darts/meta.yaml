@@ -23,9 +23,6 @@ requirements:
 
 test:
   requires:
-    - graphviz
-    - subprocess32
-    - argparse
     - time
   source_files:
     - scripts
